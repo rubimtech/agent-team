@@ -1,0 +1,65 @@
+mcp_servers:
+  cgc:
+    url: http://127.0.0.1:8104/api/v1/mcp/sse
+    connect_timeout: 60
+    enabled: true
+  qdrant-kb:
+    command: {{HERMES_HOME}}/node/node
+    args:
+      - --experimental-transform-types
+      - {{HARNESS_PLUGINS}}/memory-store/src/qdrant-kb.ts
+    env:
+      MEMORY_QDRANT_URL: http://localhost:6333
+    connect_timeout: 90
+    enabled: true
+  knowledgebase:
+    command: {{KNOWLEDGEBASE_MCP}}/.venv/Scripts/python.exe
+    args:
+      - {{KNOWLEDGEBASE_MCP}}/launch_mcp.py
+    connect_timeout: 60
+    enabled: true
+  memory-store:
+    command: {{HERMES_HOME}}/node/node
+    args:
+      - --experimental-transform-types
+      - {{HARNESS_PLUGINS}}/memory-store/src/mcp-server.ts
+    env:
+      MEMORY_ONNX_DIR: {{HERMES_HOME}}/models/bge-m3-onnx
+      MEMORY_CACHE_DIR: {{HERMES_HOME}}/memory-store
+      MEMORY_COLLECTION: agent_memory
+      MEMORY_QDRANT_URL: http://localhost:6333
+    cwd: {{HARNESS_PLUGINS}}/memory-store
+    connect_timeout: 90
+    timeout: 120
+    enabled: true
+  task_manager:
+    url: https://atm.apps.rubim.tech/mcp
+    connect_timeout: 30
+    enabled: true
+  revit:
+    command: {{REPO}}/.kilo/scripts/mcp-revit-bridge.cmd
+    timeout: 900
+    connect_timeout: 20
+    enabled: true
+  ui:
+    command: {{LOCALAPPDATA}}/UiController/RevitUiController.McpServer.exe
+    connect_timeout: 45
+    enabled: true
+  excel:
+    command: {{HERMES_HOME}}/bin/uvx.exe
+    args:
+      - excel-mcp-server
+      - stdio
+    env:
+      EXCEL_FILES_PATH: {{REPO}}
+    connect_timeout: 60
+    enabled: true
+  ssh:
+    command: {{LOCALAPPDATA}}/Programs/Python/Python311/python.exe
+    args:
+      - {{SSH_MCP}}/mcp_server.py
+    env:
+      PYTHONIOENCODING: utf-8
+      PYTHONUNBUFFERED: '1'
+    connect_timeout: 45
+    enabled: true

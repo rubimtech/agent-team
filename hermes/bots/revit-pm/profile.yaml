@@ -1,0 +1,5 @@
+description: 'Revit Architect — анализ требований, поиск похожих команд, риск-анализ, dev-ready задача'
+description_auto: false
+ui_meta:
+  hermes-bots:
+    title: 'Revit Architect'

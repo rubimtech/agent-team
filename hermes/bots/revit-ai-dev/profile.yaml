@@ -1,0 +1,5 @@
+description: 'C#/.NET разработчик RevitAiTools — плагин Revit со встроенным MCP-сервером'
+description_auto: false
+ui_meta:
+  hermes-bots:
+    title: 'Revit C# Developer'

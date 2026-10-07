@@ -1,0 +1,12 @@
+description: Code reviewer RevitAiTools — read-only ревью веток и PR до попадания
+  в main
+description_auto: false
+ui_meta:
+  hermes-bots:
+    title: Revit Reviewer
+    shape: triangle
+    color: hsl(110 68% 58%)
+    imageKind: shape
+    custom: true
+_ui_meta_revisions:
+  hermes-bots: 1

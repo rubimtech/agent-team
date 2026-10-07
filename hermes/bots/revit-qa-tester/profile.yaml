@@ -1,0 +1,5 @@
+description: 'Test engineer RevitAiTools — независимая верификация MCP-инструментов и расчётов (xUnit/TUnit, runtime MCP)'
+description_auto: false
+ui_meta:
+  hermes-bots:
+    title: 'Revit Test Engineer'

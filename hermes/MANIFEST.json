@@ -1,0 +1,191 @@
+{
+  "generated_from": {
+    "hermes_home": "{{HERMES_HOME}}",
+    "repo": "{{REPO}}"
+  },
+  "bots": {
+    "revit-orchestrator": {
+      "files": {
+        "SOUL.md": {
+          "bytes": 14253,
+          "sha256": "c6a3afc933068b91e0f9cf0ebb8e126b47f0f559d8239bde1e5c416677a0549a"
+        },
+        "profile.yaml": {
+          "bytes": 340,
+          "sha256": "a1a8eb68783fed5da69ad8b74d5f60e2f31995cb4390d5c21b939b9662d3897c"
+        },
+        "AGENTS.md": {
+          "bytes": 10614,
+          "sha256": "9ad9111bc7b76fdd65f727718731a1634ecb53e567ab39a6f04e1030008dafd0"
+        },
+        "config-keys.yaml": {
+          "bytes": 1976,
+          "sha256": "f5014f5133c680b8be5352f88c42753dd0608bc01204cc3625fefae23c501842"
+        }
+      },
+      "mcp_set": "full",
+      "source": "profiles/revit-orchestrator"
+    },
+    "revit-pm": {
+      "files": {
+        "SOUL.md": {
+          "bytes": 20291,
+          "sha256": "b23eb466d60ec56121f7dc7bc5f81b17da739d4ade2fdf6f721c6c5a3643b6aa"
+        },
+        "profile.yaml": {
+          "bytes": 233,
+          "sha256": "ee1aecf8594c675e5985956a3bec37ee0cd737ef35bd7608f87286f851fad985"
+        },
+        "AGENTS.md": {
+          "bytes": 7770,
+          "sha256": "88826bfbb6a0837b633e2684de1d8dc69d7e3f0e43d76209ee85fd4a7a9577f4"
+        },
+        "config-keys.yaml": {
+          "bytes": 1976,
+          "sha256": "2ece945c476824a4b7fae254cd0da7c565ef8f28ed35c78f5821e00b59718393"
+        }
+      },
+      "mcp_set": "full",
+      "source": "profiles/revit-pm"
+    },
+    "revit-ai-dev": {
+      "files": {
+        "SOUL.md": {
+          "bytes": 24552,
+          "sha256": "2458b65b10bc7050e37521df764500ea6139554f0f8200999121464f7b70b863"
+        },
+        "profile.yaml": {
+          "bytes": 209,
+          "sha256": "1368e2095cf1187352eedb53d206fbfe90bf76ed9e91eb5c99a84a79051c4ca1"
+        },
+        "AGENTS.md": {
+          "bytes": 7771,
+          "sha256": "a4081429ee160b1c7dd5aa6d5666a55e0a1452f73b94338d74218e3e81d66c47"
+        },
+        "config-keys.yaml": {
+          "bytes": 1780,
+          "sha256": "ce0aedf4250082743d6aa60ab5dacd461f162fb7d070210dfd9d9eca9e354fa1"
+        }
+      },
+      "mcp_set": "full",
+      "source": "profiles/revit-ai-dev"
+    },
+    "revit-qa-tester": {
+      "files": {
+        "SOUL.md": {
+          "bytes": 16703,
+          "sha256": "a4816de64eedeee3fb1c4e7a49e73ba97acb14904ac0456e68ebcda398f71296"
+        },
+        "profile.yaml": {
+          "bytes": 249,
+          "sha256": "20f4df534d8aa9c40ad40a844341748450c4c09c60ca7581f95a0856bd499a26"
+        },
+        "AGENTS.md": {
+          "bytes": 7770,
+          "sha256": "e3390909e71d662acdb4b48217e5e862d3aa5396b79cb9bcdbe6dc066eadaf0a"
+        },
+        "config-keys.yaml": {
+          "bytes": 1891,
+          "sha256": "908ba7c41b142870d2413fcaaac92c6d6b8174c47ce66dec323e90a1d1019eb9"
+        }
+      },
+      "mcp_set": "full",
+      "source": "profiles/revit-qa-tester"
+    },
+    "revit-code-reviewer": {
+      "files": {
+        "SOUL.md": {
+          "bytes": 26715,
+          "sha256": "f28e3acc69788e1ec9edc62a6e65727d3b0767f456c1f6edd9da388a7261ed43"
+        },
+        "profile.yaml": {
+          "bytes": 313,
+          "sha256": "8cee89618122f16aac4310f5934df18a6b1ad98913e8f336389a2eb90e008d37"
+        },
+        "AGENTS.md": {
+          "bytes": 7776,
+          "sha256": "dd4304e5a975dc2504d2ad642c1460b718eade6f7a440e441b81f21663d09e27"
+        },
+        "config-keys.yaml": {
+          "bytes": 1884,
+          "sha256": "95eb22d0a0ebab4f8c8c21f287d32d802d19f4c0883d5141af22ed3cf563e8b7"
+        }
+      },
+      "mcp_set": "reviewer",
+      "source": "profiles/revit-code-reviewer"
+    }
+  },
+  "mcp": {
+    "mcp-servers.full.yaml": {
+      "servers": [
+        "cgc",
+        "qdrant-kb",
+        "knowledgebase",
+        "memory-store",
+        "task_manager",
+        "revit",
+        "ui",
+        "excel",
+        "ssh"
+      ],
+      "bytes": 1764,
+      "sha256": "a53121f01bbce4ecc9fd89ae1ab2c389d824021aa38a0cbd824eabffd7cda8d6"
+    },
+    "mcp-servers.reviewer.yaml": {
+      "servers": [
+        "cgc",
+        "qdrant-kb",
+        "knowledgebase",
+        "memory-store",
+        "task_manager",
+        "revit",
+        "excel"
+      ],
+      "bytes": 1414,
+      "sha256": "ae51a30fd07da67c31987184b5518fb392f4e0ff6189569cf35b5f0e11f36ccc"
+    }
+  },
+  "hermes_native_skills": {
+    "revit-mcp-tool-operations": {
+      "files": 13,
+      "source": "{{HERMES_HOME}}\\skills\\software-development\\revit-mcp-tool-operations"
+    },
+    "revit-reuse-ladder": {
+      "files": 1,
+      "source": "{{HERMES_HOME}}\\skills\\revit-reuse-ladder"
+    },
+    "revit-ai-agent-console": {
+      "files": 4,
+      "source": "{{HERMES_HOME}}\\skills\\software-development\\revit-ai-agent-console"
+    },
+    "qdrant-kb-and-cgc-mcp": {
+      "files": 1,
+      "source": "{{HERMES_HOME}}\\skills\\mlops\\qdrant-kb-and-cgc-mcp"
+    },
+    "task-manager": {
+      "files": 1,
+      "source": "{{HERMES_HOME}}\\skills\\task-manager"
+    },
+    "task-manager-insights": {
+      "files": 1,
+      "source": "{{HERMES_HOME}}\\skills\\task-manager-insights"
+    },
+    "verification-dod": {
+      "files": 1,
+      "source": "{{HERMES_HOME}}\\skills\\verification-dod"
+    },
+    "agent-org-orchestration": {
+      "files": 4,
+      "source": "{{HERMES_HOME}}\\skills\\software-development\\agent-org-orchestration"
+    },
+    "cli-agent-orchestration": {
+      "files": 3,
+      "source": "{{HERMES_HOME}}\\skills\\software-development\\cli-agent-orchestration"
+    },
+    "revit-donor-porting": {
+      "files": 3,
+      "source": "{{HERMES_HOME}}\\skills\\software-development\\revit-donor-porting"
+    }
+  },
+  "templated": true
+}

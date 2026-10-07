@@ -1,0 +1,74 @@
+model:
+  default: xiaomi/mimo-v2.6-flash
+  provider: routerai
+agent: {}
+terminal:
+  cwd: {{REPO}}
+skills:
+  external_dirs:
+    - {{HERMES_HOME}}\skills-revita
+  disabled:
+    - agent-designer
+    - agent-harness
+    - agent-observability-eval
+    - agent-workflow-designer
+    - api-design-reviewer
+    - api-test-suite-builder
+    - application-security
+    - brainstorming
+    - browser-automation
+    - capture
+    - changelog-generator
+    - ci-cd-pipeline-builder
+    - coauthor-pr-review
+    - code-reviewer
+    - code-simplification
+    - codebase-onboarding
+    - completion-gates
+    - context-engineering
+    - debugging-agents
+    - deep-work
+    - dependency-auditor
+    - diagnosing-bugs
+    - doubt-driven-development
+    - env-secrets-manager
+    - finishing-a-development-branch
+    - floorplan-vision-analysis
+    - human-gate
+    - incremental-implementation
+    - interview-me
+    - lean-ctx
+    - mcp-server-builder
+    - migration-architect
+    - observability-designer
+    - pr-review-expert
+    - rag-architect
+    - revit-api-option-handlers
+    - revit-assembly-resolution
+    - revit-command-and-application
+    - revit-dependency-isolation
+    - revit-documentation-production
+    - revit-documentation-standard
+    - revit-floorplan-builder
+    - revit-mcp-bridge
+    - revit-multi-version-configuration
+    - revit-reuse-ladder
+    - senior-architect
+    - senior-fullstack
+    - senior-secops
+    - senior-security
+    - skill-creator
+    - spec-driven-development
+    - spec-driven-workflow
+    - task-manager
+    - task-specification
+    - tech-debt-tracker
+    - tech-stack-evaluator
+    - using-agent-skills
+    - verification-dod
+    - vibe-coding
+    - writing-for-agents
+delegation:
+  max_concurrent_children: 2
+memory:
+  memory_enabled: true

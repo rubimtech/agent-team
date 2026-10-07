@@ -1,0 +1,9 @@
+description: 'Revit Project Orchestrator — приём задачи, triage «MCP-тул или модуль с UI», план, диспетчеризация команды'
+description_auto: false
+ui_meta:
+  hermes-bots:
+    title: 'Revit Orchestrator'
+    shape: hexagon
+    color: hsl(28 90% 58%)
+    imageKind: shape
+    custom: true
